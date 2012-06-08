@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+composer.lock
+composer.phar
+phpdoc.xml
+phpunit.xml
+vendor/
+test/

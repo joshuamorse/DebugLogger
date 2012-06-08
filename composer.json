@@ -1,0 +1,42 @@
+{
+    "name": "jmflava/DebugLogger",
+    "type": "library",
+    "description": "Debug Logging Abstraction for PHP",
+    "keywords": ["log","logging","debug"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joshua Morse",
+            "email": "dashvibe@gmail.com",
+            "homepage": "http://jmflava.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "firephp/firephp-core",
+                "version": "v0.4.0rc3",
+                "dist": { "url": "https://github.com/firephp/firephp-core/zipball/v0.4.0rc3", "type": "zip" }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ccampbell/chromephp",
+                "version": "3.0",
+                "dist": { "url": "https://github.com/ccampbell/chromephp/zipball/3.0", "type": "zip" }
+            }
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "monolog/monolog": "*",
+        "firephp/firephp-core": "*",
+        "ccampbell/chromephp": "*"
+    },
+    "autoload": {
+        "psr-0": { "DebugLogger": "src/" }
+    },
+    "target-dir": "DebugLogger"
+}
